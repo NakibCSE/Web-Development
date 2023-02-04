@@ -1,0 +1,26 @@
+header{
+    height: 200px;
+    background-image: url('../images/maxresdefault.jpg');
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h3{
+    color: magenta;
+    text-decoration: underline wavy green;
+}
+p{
+    color: blueviolet;
+}
+.page-title{
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+ol li{
+    color: purple;
+    display: inline;
+}
