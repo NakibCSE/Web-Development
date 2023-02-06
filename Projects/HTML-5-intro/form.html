@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Form</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Jhal Pitha Ghor</h2>
+    <form>
+        <label for="name">Your Name
+            <input id="name" type="text" placeholder="Your Name">
+        </label>
+        
+        <label for="email">Your Email
+            <input id="email" type="email" placeholder="Your Email">
+        </label>
+        <label for="phone">Your Mobile
+            <input type="phone" type="number" placeholder="Your phone number">
+        </label>
+        <fieldset>
+            <legend>Pick one pita</legend>
+            <label for="chitoi">
+                <input type="radio" name = "pitha" id = "chitoi"> Chitoi
+            </label>
+            <label for="vapa">
+                <input type="radio" name = "pitha" id = "vapa"> Vapa
+            </label>
+            <label for="coconat">
+                <input type="radio" name = "pitha" id = "coconat"> Coconat
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Select one or more vortas
+            </legend>
+            <label for="sorisa">
+                <input type="checkbox" name = "vorta" id="sorisa"> Sorisa
+            </label>
+            <label for="shutki">
+                <input type="checkbox" name = "vorta" id="shutki"> Shutki
+            </label>
+            <label for="dal">
+                <input type="checkbox" name = "vorta" id="dal"> Dal
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special Instruction</legend>
+            <textarea name="" id="" cols="60" rows="3"></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
