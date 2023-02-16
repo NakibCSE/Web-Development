@@ -1,0 +1,27 @@
+img{
+    height: 100%;
+    width: 100%;
+}
+.row{
+    height: 400px;
+    margin-bottom: 5px;
+}
+.second-row{
+    display: flex;
+    gap: 5px;
+}
+.second-row > row{
+    flex: 1;
+}
+.third-row{
+    display: flex;
+    gap: 5px;
+}
+.third-row-second-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.third-row>div{
+    flex: 1;
+}
