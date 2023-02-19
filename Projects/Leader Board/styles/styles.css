@@ -89,6 +89,9 @@ hr {
 /* Course styles */
 .course-info{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .course .course-banner img {
     width: 224px;
@@ -103,4 +106,14 @@ hr {
 .fa-star.empty{
     color: #AEAEAE;
 }
+.course-duration{
+    background-color: #FFE4E8;
+    border-radius: 150px;
+    color: #FF4A60;
+    padding: 10px;
+}
 
+.fa-clock{
+    color: #FF4A60;
+    font-size: 16px;
+}
