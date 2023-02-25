@@ -87,8 +87,16 @@ hr {
 }
 
 /* Course styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
 .course-info{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .course .course-banner img {
     width: 224px;
@@ -103,4 +111,43 @@ hr {
 .fa-star.empty{
     color: #AEAEAE;
 }
+.course-duration{
+    background-color: #FFE4E8;
+    border-radius: 150px;
+    color: #FF4A60;
+    padding: 10px;
+}
 
+.fa-clock{
+    color: #FF4A60;
+    font-size: 16px;
+}
+
+/* Media queries to make the site responsive */
+/* Mobile devices */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+
+/* Tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
