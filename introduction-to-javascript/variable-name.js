@@ -23,3 +23,6 @@ var user_name = "raj bappa"; //Snack case
 var userHomeAddrees = "Chittagong";  //Camel case (recommendad)
 var UserHomeAddress = "Chittagong"; //Pascal case
 
+//Variable name is case sensitive
+var person = 1 add
+var Person = 1 aren't smae 
