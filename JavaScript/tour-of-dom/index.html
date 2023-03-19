@@ -23,10 +23,24 @@
             <li>Shafayet</li>
             <li>Bonobsash</li>
         </ul>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+        </ul>
     </main>
     <script src="./js/dom.js"></script>
     <script>
-        console.log('Adding JS inside the html file');
+        const liCollection = document.getElementsByTagName('li');
+        //console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            console.log(h1.innerText);
+        }
     </script>
 </body>
 </html>
