@@ -11,6 +11,9 @@
         li {
             color: tomato;
         }
+        .fruits-container li{
+            color: orange;
+        }
         #fruits-title{
             color: black;
         }
@@ -33,7 +36,7 @@
                 <li>Bonobsash</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
@@ -53,8 +56,14 @@
     </main>
     <script src="./js/dom.js"></script>
     <script>
+
+        //Option-1: getElementByTagName
+        //Option-2: getElementByID
+        //Option-3: getElementClassName
+        //Option-4: querySelector
+        //Option-5: querySelectorAll
         const liCollection = document.getElementsByTagName('li');
-        //console.log(liCollection);
+
         for (const li of liCollection) {
             console.log(li.innerText);
         }
@@ -70,6 +79,14 @@
         for(const place of places){
             console.log(place.innerText);
         }
+
+
+
+    //QuerySelectorAll
+    const someli = document.querySelectorAll('.fruits-container li');
+    for(const li of someli){
+        console.log(li.innerText);
+    }
     </script>
 </body>
 
