@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="./styles/styles.css">
-<<<<<<< HEAD
-    <script src="./js/styleinjs.js"></script>    
-=======
-    <script src="./js/styleinjs.js"></script>
->>>>>>> c835dbdb8f5b311e4320fc410b1a1dc9cbcb3c3c
+    
     <style>
         li {
             color: tomato;
@@ -49,7 +45,7 @@
                 <li>Carrot</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="large-text">
             <h1 id="places-title">Places I like to visit</h1>
             <ul>
                 <li class="important-places">Bandarban</li>
@@ -59,7 +55,7 @@
             </ul>
         </section>
     </main>
-    <script src="./js/dom.js"></script>
+    <script src="./js/styleinjs.js"></script>
     <script>
 
         //Option-1: getElementByTagName
@@ -70,19 +66,19 @@
         const liCollection = document.getElementsByTagName('li');
 
         for (const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         const allHeadings = document.getElementsByTagName('h1');
         for (const h1 of allHeadings) {
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
 
         const fruitsTitle = document.getElementById('fruits-title');
         fruitsTitle.innerText = 'Fruits Changed by JS';
         const places = document.getElementsByClassName('important-places');
         for(const place of places){
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
 
 
