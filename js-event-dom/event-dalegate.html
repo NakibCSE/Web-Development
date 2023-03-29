@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explore Event Dalegate</h1>
+    <section>
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Molestiae, perferendis fuga.</li>
+            <li class="item">Ad, totam deserunt.</li>
+            <li class="item">Porro, nostrum eaque!</li>
+            <li class="item">Quis, vitae id.</li>
+            <li class="item">Soluta, ipsum quis.</li>
+        </ul>
+    </section>
+    <script>
+        const items = document.getElementsByClassName('item');
+        for(const item of items){
+            item.addEventListener('click',function(event){
+                event.target.parentNode.removeChild(event.target);
+            })
+        }
+    </script>
+</body>
+</html>
