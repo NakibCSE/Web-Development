@@ -13,11 +13,11 @@ document.getElementById("btn-submit").addEventListener('click', function(){
     //Danger: Do not verify email at client side
     //Step 4: Verify email && password
     if(email === "sontan@baap.com" && pass === "secret"){
-        console.log("Valid User");
+        window.location.href = "../bank.html";
     }
     else
     {
-        console.log("Invalid User");
+        alert("Tuke Tejjo sontan gosona korlam!")
     }
 
     
