@@ -18,7 +18,5 @@ document.getElementById("btn-submit").addEventListener('click', function(){
     else
     {
         alert("Tuke Tejjo sontan gosona korlam!")
-    }
-
-    
+    }  
 })
