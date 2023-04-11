@@ -23,11 +23,11 @@ document.getElementById("btn-withdraw").addEventListener('click', function(){
     const PreviousBalanceAmnt = parseFloat(PreviousBalanceAmntString);
 
     //Step 7: reduce the balance after withdrawal
-    const currentBalance = PreviousBalanceAmnt - CurrentWithdrawAmnt;
+    const currentBalance = PreviousBalanceAmnt - newWithdrawAmnt;
     PreviousBalanceField.innerText = currentBalance;
 
 
     //step 8: clear the withdraw field
-    withdrawField.innerText = "";
+    withdrawField.value = "";
 
 })
