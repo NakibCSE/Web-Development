@@ -37,6 +37,7 @@ document.getElementById('case-plus').addEventListener('click', function(){
 
     //Call case total price update function
     updateCaseTotalPrice(totalCaseNumber);
+    calculateSubtotal()
 })
 
 //Add event listener on minus button of case field 

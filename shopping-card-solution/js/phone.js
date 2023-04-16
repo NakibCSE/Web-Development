@@ -16,20 +16,23 @@ function updatePhoneNumber(isIncrease){
     phoneNumberField.value = newPhoneNumber; 
     return newPhoneNumber;
 }
-// Add event listener to phone plus button
-document.getElementById('phone-plus').addEventListener('click', function(){
-    const currentPhoneNumber = updatePhoneNumber(true);
+
+function updatePhoneTotal(currentPhoneNumber){
     const phoneTotalField = document.getElementById('phone-total');
     const currentPhoneTotal = currentPhoneNumber * 1219;
     phoneTotalField.innerText = currentPhoneTotal;
-
+}
+// Add event listener to phone plus button
+document.getElementById('phone-plus').addEventListener('click', function(){
+    const currentPhoneNumber = updatePhoneNumber(true);
+    updatePhoneTotal(currentPhoneNumber);
+    calculateSubtotal();
 })
 
 
 //Add event listener to phone minus button
 document.getElementById('phone-minus').addEventListener('click', function(){
     const currentPhoneNumber = updatePhoneNumber(false);
-    const phoneTotalField = document.getElementById('phone-total');
-    const currentPhoneTotal = currentPhoneNumber * 1219;
-    phoneTotalField.innerText = currentPhoneTotal;
+    updatePhoneTotal(currentPhoneNumber);
+    calculateSubtotal();
 })
