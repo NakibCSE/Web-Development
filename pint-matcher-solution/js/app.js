@@ -46,3 +46,33 @@ document.getElementById('calculator').addEventListener('click', function(event){
         typeNumberField.value = newTypeNumber;
     }
 })
+
+
+//Pin matcher part
+document.getElementById('pin-match').addEventListener('click', function(){
+    //Get the generated random number 
+    const randomNumberField = document.getElementById('display-pin');
+    const randomNumberString = randomNumberField.value;
+    const randomNumber = parseInt(randomNumberString);
+    console.log(randomNumber);
+
+
+    //Get the typed number 
+    const typedNumberField = document.getElementById('type-number');
+    const typedNumberString = typedNumberField.value;
+    const typedNumber = parseInt(typedNumberString);
+
+    const failedMessage = document.getElementById('failed');
+    const successMessage = document.getElementById('success');
+
+    if(randomNumber === typedNumber){
+        
+        successMessage.style.display = 'block';
+        failedMessage.style.display = 'none';
+    }
+    else{
+        
+        failedMessage.style.display = 'block';
+        successMessage.style.display = 'none';
+    }
+})
